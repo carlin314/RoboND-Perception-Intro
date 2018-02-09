@@ -14,7 +14,7 @@ ny = 9 #enter the number of inside corners in y
 images = glob.glob('./images/Cal*.jpg')
 
 # Select any index to grab an image from the list
-idx = -1
+idx = 2
 
 # Read in the image
 img = mpimg.imread(images[idx])
