@@ -11,8 +11,8 @@ from time import time
 #############################
 
 # Read in the image and depth map as seperate assets
-image_location = '1.png'
-depth_map_location = '2.png'
+image_location = 'images/Apple_RGB.png'
+depth_map_location = 'images/Apple_D.png'
 
 # Load in the images
 depth_map = mpimg.imread(depth_map_location)
@@ -33,7 +33,7 @@ count = 0
 
 # Cut down pixels for time purpose 
 # Computations need to be under 30s
-pixel_cut = 4 
+pixel_cut = 3 
       
 # Iterate thorugh all the pixels       
 for x in range(cols):
