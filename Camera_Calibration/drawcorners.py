@@ -32,6 +32,7 @@ if ret == True:
     plt.imshow(img)
     plt.show()
 else:
+    # Could not find corners, just show the original image
     print("\nCould not find corners!\n")
     plt.imshow(img)
     plt.show()
