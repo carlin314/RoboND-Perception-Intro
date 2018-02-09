@@ -7,14 +7,14 @@ import matplotlib.image as mpimg
 import glob
 
 # prepare object points
-nx = 6 #enter the number of inside corners in x
-ny = 9 #enter the number of inside corners in y
+nx = 8 #enter the number of inside corners in x
+ny = 6 #enter the number of inside corners in y
 
 # Make a list of calibration images
-images = glob.glob('./images/Cal*.jpg')
+images = glob.glob('./cali_small/Cal*.jpg')
 
 # Select any index to grab an image from the list
-idx = 2
+idx = 4
 
 # Read in the image
 img = mpimg.imread(images[idx])
