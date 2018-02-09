@@ -2,7 +2,7 @@
 
 ## Camera Calibration with OpenCV
 
-* drawcorners.py will detect the inner edges of the chessboard and display it.
+* drawcorners.py will detect the inner corners of the chessboard and display it.
 
 * cam_cali.py and cam_cali.ipynb in this repository contains code to calculate the camera matrix and distortion coefficients using the images in the "cali_wide" and "cali_small" folders.
 
