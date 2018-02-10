@@ -1,1 +1,1 @@
-[DBSCAN Sample Output](./images/figure_1.png)
+[DBSCAN Sample Output](./images/Figure_1.png)
