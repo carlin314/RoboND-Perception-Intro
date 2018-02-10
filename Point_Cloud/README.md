@@ -1,5 +1,3 @@
-[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
+## Point Cloud using RGB and Depth Images
 
-## RGB-D image
-
-point_cloud.py will read Apple RGB image and its Depth image then display it using matplotlib.
+<p align="center"> <img src="./images/Figure_1.png"> </p>
