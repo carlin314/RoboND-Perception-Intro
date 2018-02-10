@@ -1,0 +1,14 @@
+
+*.pyo
+*.pyc
+*.mp4
+/rec1_dataset/IMG
+/rec2_dataset/IMG
+/rec3_dataset/IMG
+/test_dataset/IMG
+.ipynb_checkpoints
+.DS_Store
+__pycache__
+/devel
+/build
+src/CMakeLists.txt
