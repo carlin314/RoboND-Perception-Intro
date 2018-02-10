@@ -6,7 +6,6 @@ import pcl
 # Load Point Cloud file
 cloud = pcl.load_XYZRGB('tabletop.pcd')
 
-
 # Voxel Grid Downsampling filter
 ################################
 # Create a VoxelGrid filter object for our input point cloud
