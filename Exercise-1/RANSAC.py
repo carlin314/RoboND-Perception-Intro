@@ -4,7 +4,7 @@
 import pcl
 
 # Load Point Cloud file
-cloud = pcl.load_XYZRGB('tabletop.pcd')
+cloud = pcl.load_XYZRGB('./pcd_in/tabletop.pcd')
 
 # Voxel Grid Downsampling filter
 ################################
@@ -21,7 +21,7 @@ vox.set_leaf_size(LEAF_SIZE, LEAF_SIZE, LEAF_SIZE)
 
 # Call the filter function to obtain the resultant downsampled point cloud
 cloud_filtered = vox.filter()
-filename = 'voxel_downsampled.pcd'
+filename = './pcd_out/voxel_downsampled.pcd'
 pcl.save(cloud_filtered, filename)
 
 # PassThrough filter
@@ -38,7 +38,7 @@ passthrough.set_filter_limits(axis_min, axis_max)
 
 # Finally use the filter function to obtain the resultant point cloud. 
 cloud_filtered = passthrough.filter()
-filename = 'pass_through_filtered.pcd'
+filename = './pcd_out/pass_through_filtered.pcd'
 pcl.save(cloud_filtered, filename)
 
 # RANSAC plane segmentation
@@ -63,14 +63,14 @@ inliers, coefficients = seg.segment()
 # Save pcd for table
 ################################
 extracted_inliers = cloud_filtered.extract(inliers, negative=False)
-filename = 'extracted_inliers.pcd'
+filename = './pcd_out/extracted_inliers.pcd'
 pcl.save(extracted_inliers, filename)
 
 # Extract outliers
 # Save pcd for tabletop objects
 ################################
 extracted_outliers = cloud_filtered.extract(inliers, negative=True)
-filename = 'extracted_outliers.pcd'
+filename = './pcd_out/extracted_outliers.pcd'
 pcl.save(extracted_outliers, filename)
 
 
