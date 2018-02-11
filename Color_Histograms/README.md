@@ -1,14 +1,14 @@
 ## Color Histograms
 
-<p align="center"> <img src="./images/pepsi.png"> </p>
+<p align="center"> <img src="./images/pepsi.jpg"> </p>
 
-<p align="center"> <img src="./images/figure_1.png"> </p>
+<p align="center"> <img src="./images/Figure_1.png"> </p>
 
-<p align="center"> <img src="./images/coke.png"> </p>
+<p align="center"> <img src="./images/coke.jpg"> </p>
 
-<p align="center"> <img src="./images/figure_2.png"> </p>
+<p align="center"> <img src="./images/Figure_2.png"> </p>
 
-<p align="center"> <img src="./images/fanta.png"> </p>
+<p align="center"> <img src="./images/fanta.jpg"> </p>
 
-<p align="center"> <img src="./images/figure_3.png"> </p>
+<p align="center"> <img src="./images/Figure_3.png"> </p>
 
