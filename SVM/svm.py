@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn import svm
 from generate_clusters import cluster_gen
 
-np.random.seed(424) # Change the number to generate a different cluster.
+# Change the number to generate a different cluster.
+np.random.seed(424) 
 
 n_clusters = 3
 clusters_x, clusters_y, labels = cluster_gen(n_clusters)
@@ -22,7 +23,10 @@ svc = svm.SVC(kernel=ker).fit(X, y)
 # Plotting Routine courtesy of: http://scikit-learn.org/stable/auto_examples/svm/plot_iris.html#sphx-glr-auto-examples-svm-plot-iris-py
 # Note: this coloring scheme breaks down at > 7 clusters or so
 
-h = 0.2  # step size in the mesh
+# step size in the mesh
+h = 0.2
+
+
 x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1 # -1 and +1 to add some margins
 y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
